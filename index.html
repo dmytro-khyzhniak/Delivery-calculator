@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form>
+    <div class="row row-size">
+      <div class="form-group">
+        <p class="badge">Вес (кг)</p>
+        <input type="text" name="date" class="form-control" id="weight" required="" placeholder="1500" />
+      </div>
+      <div class="form-group">
+        <p class="badge">Объем (куб²)</p>
+        <input type="text" name="adress" id="vol" class="form-control" placeholder="2" />
+      </div>
+    </div>
+    <div class="custom-control">
+      <div class="col" style="visibility: visible;">
+        <input type="checkbox" id="load" name="mess" class="custom-control-input" />
+        <label class="custom-control-label" for="load">Нужна погрузка</label>
+      </div>
+      <div class="col" style="visibility: visible;">
+        <input type="checkbox" id="del" name="mess" class="custom-control-input" />
+        <label class="custom-control-label" for="del">Доставка до места</label>
+      </div>
+      <div class="col" style="visibility: visible;">
+        <input type="checkbox" id="frag" name="mess" class="custom-control-input" />
+        <label class="custom-control-label" for="frag">Хрупкий груз</label>
+      </div>
+    </div>
+    <div class="row row-range">
+      <div class="form-group">
+        <label class="title" for="range">Расстояние <span class="distance">500</span> <span>км</span></label>
+        <input type="range" class="custom-range" min="50" max="5000" step="50" id="range" value="500" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <input type="button" name="adress" id="btn" class="btn-block" value="Считать" />
+      </div>
+    </div>
+    <div class="row"><span class="price" id="out">0.0</span> <span class="rub">₽</span> </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+body {
+    background-color: #2A2F36;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
+
+ .row-size {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+ }
+ .row-size .form-group {
+    flex: 0 0 49%;
+ }
+ .form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(18,192,221,0.05);
+    border: 1px solid rgba(42,47,54,0.05);
+    padding: 20px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+ }
+ .form-group input:focus {
+    outline: none;
+ }
+ .badge {
+    margin-bottom: 5px;
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: 700;
+ }
+ .custom-control {
+    margin-bottom: 35px;
+ }
+ .custom-control .col {
+    margin-bottom: 12px;
+ }
+ .row-range {
+    margin-bottom: 15px;
+ }
+ .title {
+    font-weight: 700;
+    font-size: 18px;
+ }
+ input[type='range'] {
+    overflow: hidden;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: none;
+    padding: 0;
+ }
+ input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #12C0DD;
+    margin-top: -1px;
+ }
+     
+ input[type='range']::-webkit-slider-thumb {
+     width: 20px;
+     -webkit-appearance: none;
+     height: 20px;
+     cursor: ew-resize;
+     background: #12C0DD;
+     box-shadow: -600px 0 0 600px #12C0DD;
+     }
+     
+ input[type="range"]::-moz-range-progress {
+     background-color: #12C0DD; 
+ }
+ input[type="range"]::-moz-range-track {  
+     background-color: #12C0DD;
+ }
+ input[type="range"]::-ms-fill-lower {
+     background-color: #12C0DD; 
+ }
+ input[type="range"]::-ms-fill-upper {  
+     background-color: #12C0DD;
+ }
+ .price, .rub {
+    font-size: 40px;
+    font-weight: 700;
+ }
+ .btn-block {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    background-color: #12C0DD;
+    border: none;
+    padding: 20px 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+ }
+ .btn-block:hover {
+    background-color: #0db5d0;
+ }
+ .btn-block:focus {
+    outline: none;
+ }
